@@ -1,0 +1,20 @@
+
+<web-app>
+
+<welcome-file-list>
+ <welcome-file>/WEB-INF/View/login.jsp</welcome-file>
+ </welcome-file-list>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  <servlet-name>Front_Controller</servlet-name>
+  <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+  <init-param>
+  <param-name>contextConfigLocation</param-name>
+  <param-value>/WEB-INF/dispatcherConfig.xml</param-value>
+  </init-param>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>Front_Controller</servlet-name>
+  <url-pattern>/spring/*</url-pattern>
+  </servlet-mapping>
+</web-app>
